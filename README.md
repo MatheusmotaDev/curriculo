@@ -32,4 +32,4 @@ npm run dev
 - React
 - Next.js
 - CSS
-- BrasilAPI para consultar feriados nacionais
+- API do GitHub para consultar dados do Flutter

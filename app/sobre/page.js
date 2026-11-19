@@ -1,5 +1,5 @@
 const tecnologias = ["Flutter", "Java", "PostgreSQL", "MySQL"];
-const modulos = ["Next.js", "React", "CSS", "BrasilAPI"];
+const modulos = ["Next.js", "React", "CSS", "API do GitHub"];
 
 export default function Sobre() {
   return (
@@ -26,7 +26,7 @@ export default function Sobre() {
           </div>
           <p>
             O Next.js organiza as páginas, o React monta os componentes, o CSS
-            cuida do visual e a BrasilAPI fornece dados para a página inicial.
+            cuida do visual e a API do GitHub fornece dados para a página de projetos.
           </p>
         </article>
       </div>
