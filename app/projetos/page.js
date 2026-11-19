@@ -1,4 +1,4 @@
-import GitHubFlutter from "@/components/GitHubFlutter";
+import ProjetoGitHub from "@/components/ProjetoGitHub";
 
 const projetos = [
   { nome: "Avança Fácil", tipo: "Ed-tech", texto: "Projeto de tecnologia voltado para o setor de educação." },
@@ -13,7 +13,7 @@ export default function Projetos() {
       <h1>Ideias das quais faço parte</h1>
       <p className="introducao">Projetos em diferentes mercados nos quais atuo como engenheiro de software.</p>
 
-      <div className="grade-cards">
+      <div className="grade-cards projetos-grid">
         {projetos.map((projeto) => (
           <article className="card projeto" key={projeto.nome}>
             <span className="tipo">{projeto.tipo}</span>
@@ -22,6 +22,8 @@ export default function Projetos() {
             <div className="tags"><span>Software</span><span>Tecnologia</span></div>
           </article>
         ))}
+
+        <ProjetoGitHub />
       </div>
 
       <section className="premios">
@@ -36,7 +38,6 @@ export default function Projetos() {
         </div>
       </section>
 
-      <GitHubFlutter />
     </section>
   );
 }

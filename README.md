@@ -32,4 +32,4 @@ npm run dev
 - React
 - Next.js
 - CSS
-- API do GitHub para consultar dados do Flutter
+- API do GitHub para consultar dados do projeto Taverna dos Aventureiros

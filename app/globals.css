@@ -296,6 +296,10 @@ nav a:hover {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.projetos-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .card {
   background: var(--superficie);
   border: 1px solid var(--borda);
@@ -392,6 +396,62 @@ nav a:hover {
   margin-bottom: 0;
 }
 
+.projeto-topo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.projeto-topo small {
+  color: var(--cinza);
+  font-family: "Courier New", monospace;
+  font-size: 0.72rem;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.projeto-detalhes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: auto;
+  padding-top: 22px;
+  color: var(--cinza);
+  font-family: "Courier New", monospace;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.status-api {
+  font-family: "Courier New", monospace;
+  font-size: 0.82rem;
+}
+
+.projeto-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.projeto-links a {
+  border: 1px solid var(--borda);
+  padding: 8px 13px;
+  font-size: 0.82rem;
+  font-weight: bold;
+}
+
+.projeto-links a:first-child {
+  background: var(--verde);
+  color: #0a0c0b;
+  border-color: var(--verde);
+}
+
+.projeto-links a:hover {
+  border-color: var(--verde);
+}
+
 .premios {
   margin-top: 80px;
   border-top: 1px solid var(--borda);
@@ -414,61 +474,6 @@ nav a:hover {
 
 .premio strong {
   color: var(--verde);
-}
-
-.github-box {
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 70px;
-  margin-top: 90px;
-  background: var(--verde);
-  color: #0a0c0b;
-  padding: 48px;
-}
-
-.github-box .etiqueta {
-  color: #435313;
-}
-
-.github-box h2 {
-  margin: 10px 0 14px;
-  font-size: 2.3rem;
-  line-height: 1.05;
-  letter-spacing: -0.04em;
-}
-
-.github-texto p {
-  margin-bottom: 0;
-  color: #35401d;
-}
-
-.github-dados {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: stretch;
-  border: 1px solid rgba(10, 12, 11, 0.3);
-}
-
-.github-dados > div {
-  min-height: 135px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-  border-right: 1px solid rgba(10, 12, 11, 0.3);
-}
-
-.github-dados > div:last-child {
-  border-right: 0;
-}
-
-.github-dados strong {
-  font-size: 1.6rem;
-}
-
-.github-dados span {
-  font-size: 0.8rem;
-  text-transform: uppercase;
 }
 
 .rodape {
@@ -512,8 +517,7 @@ nav a:hover {
     max-width: 650px;
   }
 
-  .secao-cabecalho,
-  .github-box {
+  .secao-cabecalho {
     grid-template-columns: 1fr;
     gap: 28px;
   }
@@ -563,23 +567,16 @@ nav a:hover {
     padding-top: 40px;
   }
 
-  .resumo,
-  .github-dados {
+  .resumo {
     grid-template-columns: 1fr;
   }
 
-  .resumo div,
-  .github-dados > div {
+  .resumo div {
     border-right: 0;
     border-bottom: 1px solid var(--borda);
   }
 
-  .github-dados > div {
-    border-bottom-color: rgba(10, 12, 11, 0.3);
-  }
-
-  .resumo div:last-child,
-  .github-dados > div:last-child {
+  .resumo div:last-child {
     border-bottom: 0;
   }
 
@@ -602,7 +599,13 @@ nav a:hover {
     gap: 4px;
   }
 
-  .github-box {
-    padding: 28px;
+  .projeto-topo,
+  .projeto-links {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .projeto-topo small {
+    text-align: left;
   }
 }

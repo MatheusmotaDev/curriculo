@@ -26,7 +26,7 @@ export default function Sobre() {
           </div>
           <p>
             O Next.js organiza as páginas, o React monta os componentes, o CSS
-            cuida do visual e a API do GitHub fornece dados para a página de projetos.
+            cuida do visual e a API do GitHub atualiza os dados de um projeto pessoal.
           </p>
         </article>
       </div>
