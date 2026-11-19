@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Feriados from "@/components/Feriados";
 import foto from "@/eu.jpeg";
 
 export default function Home() {
@@ -30,6 +31,10 @@ export default function Home() {
         <div><strong>2</strong><span>premiações</span></div>
         <div><strong>4</strong><span>tecnologias principais</span></div>
       </section>
+
+      <div className="container">
+        <Feriados />
+      </div>
     </>
   );
 }
