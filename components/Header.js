@@ -4,7 +4,10 @@ export default function Header() {
   return (
     <header className="cabecalho">
       <div className="container menu">
-        <Link href="/" className="logo">Matheus.dev</Link>
+        <Link href="/" className="logo">
+          <span className="logo-marca">M</span>
+          <span>Matheus</span>
+        </Link>
 
         <nav aria-label="Navegação principal">
           <Link href="/">Home</Link>
