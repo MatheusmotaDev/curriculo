@@ -1,4 +1,21 @@
-const tecnologias = ["Flutter", "Java", "PostgreSQL", "MySQL"];
+const tecnologias = [
+  {
+    nome: "Flutter",
+    icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
+  },
+  {
+    nome: "Java",
+    icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+  },
+  {
+    nome: "PostgreSQL",
+    icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+  },
+  {
+    nome: "MySQL",
+    icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+  },
+];
 const modulos = ["Next.js", "React", "CSS", "API do GitHub"];
 
 export default function Sobre() {
@@ -14,8 +31,13 @@ export default function Sobre() {
       <div className="duas-colunas">
         <article className="card">
           <h2>Tecnologias que conheço</h2>
-          <div className="tags">
-            {tecnologias.map((tecnologia) => <span key={tecnologia}>{tecnologia}</span>)}
+          <div className="tags tags-tecnologias">
+            {tecnologias.map((tecnologia) => (
+              <span className="tecnologia" key={tecnologia.nome}>
+                <img src={tecnologia.icone} alt="" loading="lazy" />
+                {tecnologia.nome}
+              </span>
+            ))}
           </div>
         </article>
 

@@ -342,6 +342,23 @@ nav a:hover {
   text-transform: uppercase;
 }
 
+.tags-tecnologias {
+  gap: 12px;
+}
+
+.tags .tecnologia {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 13px;
+}
+
+.tecnologia img {
+  width: 27px;
+  height: 27px;
+  object-fit: contain;
+}
+
 .timeline {
   margin-top: 58px;
   border-top: 1px solid var(--borda);
