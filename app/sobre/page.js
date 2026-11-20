@@ -16,7 +16,26 @@ const tecnologias = [
     icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
   },
 ];
-const modulos = ["Next.js", "React", "CSS", "API do GitHub"];
+const modulos = [
+  {
+    nome: "Next.js",
+    icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    claro: true,
+  },
+  {
+    nome: "React",
+    icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  },
+  {
+    nome: "CSS",
+    icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+  },
+  {
+    nome: "GitHub",
+    icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    claro: true,
+  },
+];
 
 export default function Sobre() {
   return (
@@ -43,8 +62,16 @@ export default function Sobre() {
 
         <article className="card">
           <h2>Usado neste portfólio</h2>
-          <div className="tags">
-            {modulos.map((modulo) => <span key={modulo}>{modulo}</span>)}
+          <div className="tags tags-tecnologias">
+            {modulos.map((modulo) => (
+              <span
+                className={`tecnologia ${modulo.claro ? "tecnologia-icone-claro" : ""}`}
+                key={modulo.nome}
+              >
+                <img src={modulo.icone} alt="" loading="lazy" />
+                {modulo.nome}
+              </span>
+            ))}
           </div>
           <p>
             O Next.js organiza as páginas, o React monta os componentes, o CSS

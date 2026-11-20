@@ -359,6 +359,10 @@ nav a:hover {
   object-fit: contain;
 }
 
+.tecnologia-icone-claro img {
+  filter: brightness(0) invert(1);
+}
+
 .timeline {
   margin-top: 58px;
   border-top: 1px solid var(--borda);
