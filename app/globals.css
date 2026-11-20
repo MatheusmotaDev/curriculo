@@ -363,6 +363,12 @@ nav a:hover {
   filter: brightness(0) invert(1);
 }
 
+.tecnologia-icone-fundo img {
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 3px;
+}
+
 .timeline {
   margin-top: 58px;
   border-top: 1px solid var(--borda);

@@ -20,7 +20,7 @@ const modulos = [
   {
     nome: "Next.js",
     icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-    claro: true,
+    fundoClaro: true,
   },
   {
     nome: "React",
@@ -65,7 +65,7 @@ export default function Sobre() {
           <div className="tags tags-tecnologias">
             {modulos.map((modulo) => (
               <span
-                className={`tecnologia ${modulo.claro ? "tecnologia-icone-claro" : ""}`}
+                className={`tecnologia ${modulo.claro ? "tecnologia-icone-claro" : ""} ${modulo.fundoClaro ? "tecnologia-icone-fundo" : ""}`}
                 key={modulo.nome}
               >
                 <img src={modulo.icone} alt="" loading="lazy" />
