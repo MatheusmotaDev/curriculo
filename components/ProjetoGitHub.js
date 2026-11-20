@@ -30,7 +30,6 @@ export default function ProjetoGitHub() {
     <article className="card projeto projeto-github">
       <div className="projeto-topo">
         <span className="tipo">Projeto pessoal</span>
-        <small>Dados da API do GitHub</small>
       </div>
 
       <h2>Taverna dos Aventureiros</h2>

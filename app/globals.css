@@ -404,14 +404,6 @@ nav a:hover {
   gap: 15px;
 }
 
-.projeto-topo small {
-  color: var(--cinza);
-  font-family: "Courier New", monospace;
-  font-size: 0.72rem;
-  text-align: right;
-  text-transform: uppercase;
-}
-
 .projeto-detalhes {
   display: flex;
   flex-wrap: wrap;
@@ -605,7 +597,4 @@ nav a:hover {
     flex-direction: column;
   }
 
-  .projeto-topo small {
-    text-align: left;
-  }
 }
