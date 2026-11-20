@@ -512,10 +512,6 @@ nav a:hover {
   color: var(--texto);
 }
 
-.rodape p {
-  margin: 0;
-}
-
 @media (max-width: 900px) {
   .menu {
     padding: 18px 0;
